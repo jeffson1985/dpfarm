@@ -1,0 +1,6 @@
+DP2345
+Copyright 2013-2015 shopxx.net. All rights reserved.
+Support: http://www.dp2345.com
+License: http://www.dp2345.com/license
+Revision: 2.0.x RELEASE
+Date: 2013-06

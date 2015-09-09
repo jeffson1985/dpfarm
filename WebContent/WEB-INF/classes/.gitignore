@@ -1,0 +1,10 @@
+/.DS_Store
+/applicationContext-mvc.xml
+/applicationContext-shiro.xml
+/applicationContext.xml
+/com/
+/dp2345.properties
+/dp2345.xml
+/ehcache.xml
+/log4j.properties
+/persistence.xml

@@ -1,0 +1,4 @@
+# robots.txt for dp2345
+
+User-agent: *
+Sitemap: /sitemap/index.xml
