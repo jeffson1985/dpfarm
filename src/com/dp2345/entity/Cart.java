@@ -66,7 +66,7 @@ public class Cart extends BaseEntity {
 	private Set<CartItem> cartItems = new HashSet<CartItem>();
 	
 	/** 套餐项 */
-	private Set<SetItem>  setItems = new HashSet<SetItem>();
+	private Set<CartSetProductItem>  setItems = new HashSet<CartSetProductItem>();
 
 	/**
 	 * 获取密钥
@@ -114,7 +114,7 @@ public class Cart extends BaseEntity {
 	 * @return 购物车项
 	 */
 	@OneToMany(mappedBy = "cart", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
-	public Set<SetItem> getSetItems() {
+	public Set<CartSetProductItem> getSetItems() {
 		return setItems;
 	}
 	
@@ -125,7 +125,7 @@ public class Cart extends BaseEntity {
 	 * @param setItems
 	 *            购物车项
 	 */
-	public void setSetItems(Set<SetItem> setItems) {
+	public void setSetItems(Set<CartSetProductItem> setItems) {
 		this.setItems = setItems;
 	}
 	

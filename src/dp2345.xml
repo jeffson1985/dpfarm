@@ -125,6 +125,7 @@
 	<template id="index" type="page" name="首页" templatePath="/shop/index.ftl" staticPath="/index.html" />
 	<template id="articleContent" type="page" name="文章内容" templatePath="/shop/article/content.ftl" staticPath="/article/content/${createDate?string('yyyyMM')}/${id}/${pageNumber!1}.html" />
 	<template id="productContent" type="page" name="商品内容" templatePath="/shop/product/content.ftl" staticPath="/product/content/${createDate?string('yyyyMM')}/${id}.html" />
+	<template id="setProductContent" type="page" name="套餐商品内容" templatePath="/shop/setproduct/content.ftl" staticPath="/setproduct/content/${createDate?string('yyyyMM')}/${id}.html" />
 	<template id="articleList" type="page" name="文章列表" templatePath="/shop/article/list.ftl" />
 	<template id="productList" type="page" name="商品列表" templatePath="/shop/product/list.ftl" />
 	<template id="brandList" type="page" name="品牌列表" templatePath="/shop/brand/list.ftl" />

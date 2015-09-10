@@ -27,13 +27,14 @@ import com.dp2345.util.SettingUtils;
  * @version 2.0.3
  */
 @Entity
-@Table(name = "xx_set_item")
-@SequenceGenerator(name = "sequenceGenerator", sequenceName = "xx_set_item_sequence")
-public class SetItem extends BaseEntity {
+@Table(name = "xx_cart_set_product_item")
+@SequenceGenerator(name = "sequenceGenerator", sequenceName = "xx_cart_set_product_item_sequence")
+public class CartSetProductItem extends BaseEntity {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 3094372721086923939L;
+	
 
 	/** 最大数量 */
 	public static final Integer MAX_QUANTITY = 100;
@@ -239,7 +240,7 @@ public class SetItem extends BaseEntity {
 	 */
 	@Transient
 	public boolean getIsLowStock() {
-		if (getQuantity() != null && getSetProduct() != null && getSetProduct().getStock() != null && getQuantity() > getSetProduct().getAvailableStock()) {
+		if (getQuantity() != null && getSetProduct() != null && !getSetProduct().getIsOutOfStock() && getQuantity() > getSetProduct().getAvailableStock()) {
 			return true;
 		} else {
 			return false;
